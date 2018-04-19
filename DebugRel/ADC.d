@@ -1,0 +1,10 @@
+.\DebugRel\ADC.o: .\Lib\ADC.c
+.\DebugRel\ADC.o: .\Lib\ADC.h
+.\DebugRel\ADC.o: .\Lib\Common.h
+.\DebugRel\ADC.o: .\core\stm32f10x.h
+.\DebugRel\ADC.o: .\core\core_cm3.h
+.\DebugRel\ADC.o: H:\mpro\MCU\Keil_MDK\ARM\RV31\INC\stdint.h
+.\DebugRel\ADC.o: .\core\system_stm32f10x.h
+.\DebugRel\ADC.o: .\core\stm32f10x_conf.h
+.\DebugRel\ADC.o: .\core\system.h
+.\DebugRel\ADC.o: .\Lib\usart.h

@@ -1,0 +1,11 @@
+.\DebugRel\DMA.o: .\Lib\DMA.c
+.\DebugRel\DMA.o: .\Lib\DMA.h
+.\DebugRel\DMA.o: .\Lib\common.h
+.\DebugRel\DMA.o: .\core\stm32f10x.h
+.\DebugRel\DMA.o: .\core\core_cm3.h
+.\DebugRel\DMA.o: H:\mpro\MCU\Keil_MDK\ARM\RV31\INC\stdint.h
+.\DebugRel\DMA.o: .\core\system_stm32f10x.h
+.\DebugRel\DMA.o: .\core\stm32f10x_conf.h
+.\DebugRel\DMA.o: .\core\system.h
+.\DebugRel\DMA.o: .\Lib\adc.h
+.\DebugRel\DMA.o: .\Lib\usart.h

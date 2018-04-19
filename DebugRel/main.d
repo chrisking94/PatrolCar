@@ -1,0 +1,15 @@
+.\DebugRel\main.o: .\Main\main.c
+.\DebugRel\main.o: .\lib\adc.h
+.\DebugRel\main.o: .\lib\Common.h
+.\DebugRel\main.o: .\core\stm32f10x.h
+.\DebugRel\main.o: .\core\core_cm3.h
+.\DebugRel\main.o: H:\mpro\MCU\Keil_MDK\ARM\RV31\INC\stdint.h
+.\DebugRel\main.o: .\core\system_stm32f10x.h
+.\DebugRel\main.o: .\core\stm32f10x_conf.h
+.\DebugRel\main.o: .\core\system.h
+.\DebugRel\main.o: .\lib\usart.h
+.\DebugRel\main.o: .\lib\L298N.h
+.\DebugRel\main.o: .\lib\senser.h
+.\DebugRel\main.o: .\lib\NVIC.h
+.\DebugRel\main.o: .\lib\ir1838.h
+.\DebugRel\main.o: .\lib\DMA.h

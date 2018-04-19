@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<TKStudioProject Name="Ñ²Ïß" ProjectGUID="{628C0550-1544-47e3-8572-E3B4DC8FC944}" BuildTool="15" ToolVer="STM32" Version="3.00" Author="YinHandong[Òüº®¶¬]">
+    <Configurations>
+        <Configuration Name="DebugRel" OP="0" XROM="0,0,0,0#0,0,0,0#0,0,0,0" XRAM="0,0,0,0#0,0,0,0#0,0,0,0" OldName="DebugRel" OutBig="0" McLib="0" CLK="8.000000" Cross="0" IROM="1,0x08000000,0x00010000,1#0,0,0,0" IRAM="1,0x20000000,0x00005000,0#0,0,0,0" OldCPU="STM32F103C8" OPTDBG="1,-1,1,0,1,1,()" DEVICE="STM32F103C8" VENDOR="STMicroelectronics" FAMINY="3" SIMCLK="8.000000" cfgModify="0">
+            <MDK_Output OutName="1,.\Obj\PatrolCar" OutType="1" OutBatch="0" OutHex="1" OutList="1,.\List" Debug="1" Browse="0" />
+            <MDK_User BfC="0,()#0,()" BfB="0,()#0,()" AfB="0,()#0,()" Beep="1" SDebug="0" />
+            <MDK_CParam Def="USE_STDPERIPH_DRIVER STM32F10X_MD" uDef="" Inc=".\lib;.\core" Misc="" Opt="0,0" Code="0,0,0,0,0,0" Language="0,0,0,0" List="0" />
+            <MDK_AsmParam Def="" uDef="" Inc="" Misc="" Code="0,0,0,0,0,0" Language="0" List="1,1" />
+            <MDK_Linker Misc="" UseDef="1" Code="0,0,0,1,()" Sct=".\DebugRel\Ñ²Ïß.sct" List="1,1,1,1,1,1,1,1,1" first="" />
+            <MDK_Debug DbgType="0" sfSIM="0,1,(),()" hwSIM="1,1,1,()" Drv="(),()" SrvOpt="" />
+            <DeviceProperties Item0='CPU=IRAM(0x20000000-0x20004FFF) IROM(0x8000000-0x800FFFF) CLOCK(8000000) CPUTYPE(&quot;Cortex-M3&quot;)' Item1='FLDLL=UL2CM3(-O14 -S0 -C0 -N00(&quot;ARM Cortex-M3&quot;) -D00(1BA00477) -L00(4) -FO7 -FD20000000 -FC800 -FN1 -FF0STM32F10x_128 -FS08000000 -FL010000)' Item2='MON=SARMCM3.DLL TARMSTM.DLL(&quot;-pSTM32F10x&quot;)' Item3='REGFILE=stm32f10x_lib.h(&quot;ST\STM32F10x&quot;)' Item4='SFILE=&quot;STARTUP\ST\startup_stm32f10x_md.s&quot; (&quot;STM32 Medium Density Line Startup Code&quot;)' Item5='SIM=SARMCM3.DLL  DARMSTM.DLL(&quot;-pSTM32F103C8&quot;)' />
+            <DeviceDescription Description="ARM 32-bit Cortex-M3 Microcontroller, 72MHz, 64kB Flash, 20kB SRAM,&#x0D;&#x0A;PLL, Embedded Internal RC 8MHz and 32kHz, Real-Time Clock,&#x0D;&#x0A;Nested Interrupt Controller, Power Saving Modes, JTAG and SWD,&#x0D;&#x0A;3 Synch. 16-bit Timers with Input Capture, Output Compare and PWM,&#x0D;&#x0A;16-bit 6-ch Advanced Timer, 2 16-bit Watchdog Timers, SysTick Timer,&#x0D;&#x0A;2 SPI, 2 I2C, 3 USART, USB 2.0 Full Speed Interface, CAN 2.0B Active,&#x0D;&#x0A;2 12-bit 10-ch A/D Converter,  Fast I/O Ports" />
+        </Configuration>
+    </Configurations>
+    <Files>
+        <Filter Name="Core">
+            <GNU_FileCfg IncBld="2" UseLocl="2" />
+            <GNU_CParam Def="" uDef="" Inc="" Misc="" Opt="6" Warm="4" Language="2,2,2,2,2,2" />
+            <GNU_AsmParam Def="" uDef="" Inc="" Misc="" Language="2,2" />
+            <File RelativePath=".\Core\core_cm3.c" FileType="1" Output="core_cm3.o">
+                <Header RelativePath="H:\mpro\MCU\Keil_MDK\ARM\RV31\INC\stdint.h" />
+            </File>
+            <File RelativePath=".\Core\startup_stm32f10x_md.s" FileType="2" Output="startup_stm32f10x_md.o" />
+            <File RelativePath=".\Core\system.c" FileType="1" Output="system.o">
+                <Header RelativePath=".\Core\system.h" />
+                <Header RelativePath=".\Core\stm32f10x.h" />
+                <Header RelativePath=".\Core\core_cm3.h" />
+                <Header RelativePath="H:\mpro\MCU\Keil_MDK\ARM\RV31\INC\stdint.h" />
+                <Header RelativePath=".\Core\system_stm32f10x.h" />
+                <Header RelativePath=".\Core\stm32f10x_conf.h" />
+            </File>
+            <File RelativePath=".\Core\system_stm32f10x.c" FileType="1" Output="system_stm32f10x.o">
+                <Header RelativePath=".\Core\stm32f10x.h" />
+                <Header RelativePath=".\Core\core_cm3.h" />
+                <Header RelativePath="H:\mpro\MCU\Keil_MDK\ARM\RV31\INC\stdint.h" />
+                <Header RelativePath=".\Core\system_stm32f10x.h" />
+                <Header RelativePath=".\Core\stm32f10x_conf.h" />
+            </File>
+        </Filter>
+        <Filter Name="Lib">
+            <Filter Name="src">
+                <File RelativePath=".\Lib\ADC.c" FileType="1" Output="ADC.o">
+                    <Header RelativePath=".\Lib\ADC.h" />
+                    <Header RelativePath=".\Lib\Common.h" />
+                    <Header RelativePath=".\core\stm32f10x.h" />
+                    <Header RelativePath=".\core\core_cm3.h" />
+                    <Header RelativePath="H:\mpro\MCU\Keil_MDK\ARM\RV31\INC\stdint.h" />
+                    <Header RelativePath=".\core\system_stm32f10x.h" />
+                    <Header RelativePath=".\core\stm32f10x_conf.h" />
+                    <Header RelativePath=".\core\system.h" />
+                </File>
+                <File RelativePath=".\Lib\Common.c" FileType="1" Output="Common.o">
+                    <Header RelativePath=".\Lib\Common.h" />
+                    <Header RelativePath=".\core\stm32f10x.h" />
+                    <Header RelativePath=".\core\core_cm3.h" />
+                    <Header RelativePath="H:\mpro\MCU\Keil_MDK\ARM\RV31\INC\stdint.h" />
+                    <Header RelativePath=".\core\system_stm32f10x.h" />
+                    <Header RelativePath=".\core\stm32f10x_conf.h" />
+                    <Header RelativePath=".\core\system.h" />
+                </File>
+                <File RelativePath=".\Lib\DMA.c" FileType="1" Output="DMA.o">
+                    <Header RelativePath=".\Lib\DMA.h" />
+                    <Header RelativePath=".\Lib\common.h" />
+                    <Header RelativePath=".\core\stm32f10x.h" />
+                    <Header RelativePath=".\core\core_cm3.h" />
+                    <Header RelativePath="H:\mpro\MCU\Keil_MDK\ARM\RV31\INC\stdint.h" />
+                    <Header RelativePath=".\core\system_stm32f10x.h" />
+                    <Header RelativePath=".\core\stm32f10x_conf.h" />
+                    <Header RelativePath=".\core\system.h" />
+                </File>
+                <File RelativePath=".\Lib\L298N.c" FileType="1" Output="L298N.o">
+                    <Header RelativePath=".\Lib\L298N.h" />
+                    <Header RelativePath=".\Lib\Common.h" />
+                    <Header RelativePath=".\core\stm32f10x.h" />
+                    <Header RelativePath=".\core\core_cm3.h" />
+                    <Header RelativePath="H:\mpro\MCU\Keil_MDK\ARM\RV31\INC\stdint.h" />
+                    <Header RelativePath=".\core\system_stm32f10x.h" />
+                    <Header RelativePath=".\core\stm32f10x_conf.h" />
+                    <Header RelativePath=".\core\system.h" />
+                </File>
+                <File RelativePath=".\Lib\NVIC.c" FileType="1" Output="NVIC.o">
+                    <Header RelativePath=".\Lib\NVIC.h" />
+                    <Header RelativePath=".\Lib\Common.h" />
+                    <Header RelativePath=".\core\stm32f10x.h" />
+                    <Header RelativePath=".\core\core_cm3.h" />
+                    <Header RelativePath="H:\mpro\MCU\Keil_MDK\ARM\RV31\INC\stdint.h" />
+                    <Header RelativePath=".\core\system_stm32f10x.h" />
+                    <Header RelativePath=".\core\stm32f10x_conf.h" />
+                    <Header RelativePath=".\core\system.h" />
+                </File>
+                <File RelativePath=".\Lib\usart.c" FileType="1" Output="usart.o">
+                    <Header RelativePath=".\Lib\usart.h" />
+                    <Header RelativePath=".\Lib\Common.h" />
+                    <Header RelativePath=".\core\stm32f10x.h" />
+                    <Header RelativePath=".\core\core_cm3.h" />
+                    <Header RelativePath="H:\mpro\MCU\Keil_MDK\ARM\RV31\INC\stdint.h" />
+                    <Header RelativePath=".\core\system_stm32f10x.h" />
+                    <Header RelativePath=".\core\stm32f10x_conf.h" />
+                    <Header RelativePath=".\core\system.h" />
+                </File>
+                <File RelativePath=".\Lib\Senser.c" FileType="1" Output="Senser.o" ro="0" bss="0" rw="0">
+                    <Header RelativePath=".\Lib\senser.h" />
+                    <Header RelativePath=".\Lib\adc.h" />
+                    <Header RelativePath=".\Lib\Common.h" />
+                    <Header RelativePath=".\core\stm32f10x.h" />
+                    <Header RelativePath=".\core\core_cm3.h" />
+                    <Header RelativePath="H:\mpro\MCU\Keil_MDK\ARM\RV31\INC\stdint.h" />
+                    <Header RelativePath=".\core\system_stm32f10x.h" />
+                    <Header RelativePath=".\core\stm32f10x_conf.h" />
+                    <Header RelativePath=".\core\system.h" />
+                </File>
+                <File RelativePath=".\Lib\IR1838.c" FileType="1" Output="IR1838.o" ro="0" bss="0" rw="0">
+                    <Header RelativePath=".\Lib\ir1838.h" />
+                    <Header RelativePath=".\Lib\Common.h" />
+                    <Header RelativePath=".\core\stm32f10x.h" />
+                    <Header RelativePath=".\core\core_cm3.h" />
+                    <Header RelativePath="H:\mpro\MCU\Keil_MDK\ARM\RV31\INC\stdint.h" />
+                    <Header RelativePath=".\core\system_stm32f10x.h" />
+                    <Header RelativePath=".\core\stm32f10x_conf.h" />
+                    <Header RelativePath=".\core\system.h" />
+                    <Header RelativePath=".\Lib\usart.h" />
+                </File>
+            </Filter>
+            <Filter Name="inc">
+                <File RelativePath=".\Lib\ADC.h" FileType="4" />
+                <File RelativePath=".\Lib\Common.h" FileType="4" />
+                <File RelativePath=".\Lib\DMA.h" FileType="4" />
+                <File RelativePath=".\Lib\L298N.h" FileType="4" />
+                <File RelativePath=".\Lib\NVIC.h" FileType="4" />
+                <File RelativePath=".\Lib\usart.h" FileType="4" />
+                <File RelativePath=".\Lib\Senser.h" FileType="4" ro="0" bss="0" rw="0" />
+                <File RelativePath=".\Lib\IR1838.h" FileType="4" ro="0" bss="0" rw="0" />
+            </Filter>
+        </Filter>
+        <Filter Name="Main">
+            <File RelativePath=".\Main\main.c" FileType="1" Output="main.o">
+                <GNU_FileCfg IncBld="2" UseLocl="2" />
+                <GNU_CParam Def="" uDef="" Inc="" Misc="" Opt="6" Warm="4" Language="2,2,2,2,2,2" />
+                <Header RelativePath=".\lib\adc.h" />
+                <Header RelativePath=".\lib\Common.h" />
+                <Header RelativePath=".\core\stm32f10x.h" />
+                <Header RelativePath=".\core\core_cm3.h" />
+                <Header RelativePath="H:\mpro\MCU\Keil_MDK\ARM\RV31\INC\stdint.h" />
+                <Header RelativePath=".\core\system_stm32f10x.h" />
+                <Header RelativePath=".\core\stm32f10x_conf.h" />
+                <Header RelativePath=".\core\system.h" />
+                <Header RelativePath=".\lib\Patrol.h" />
+                <Header RelativePath=".\lib\L298N.h" />
+                <Header RelativePath=".\lib\usart.h" />
+                <Header RelativePath=".\lib\senser.h" />
+                <Header RelativePath=".\lib\NVIC.h" />
+                <Header RelativePath=".\lib\ir1838.h" />
+            </File>
+        </Filter>
+    </Files>
+</TKStudioProject>

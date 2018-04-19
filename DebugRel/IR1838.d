@@ -1,0 +1,10 @@
+.\DebugRel\IR1838.o: .\Lib\IR1838.c
+.\DebugRel\IR1838.o: .\Lib\ir1838.h
+.\DebugRel\IR1838.o: .\Lib\Common.h
+.\DebugRel\IR1838.o: .\core\stm32f10x.h
+.\DebugRel\IR1838.o: .\core\core_cm3.h
+.\DebugRel\IR1838.o: H:\mpro\MCU\Keil_MDK\ARM\RV31\INC\stdint.h
+.\DebugRel\IR1838.o: .\core\system_stm32f10x.h
+.\DebugRel\IR1838.o: .\core\stm32f10x_conf.h
+.\DebugRel\IR1838.o: .\core\system.h
+.\DebugRel\IR1838.o: .\Lib\usart.h

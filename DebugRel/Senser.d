@@ -1,0 +1,11 @@
+.\DebugRel\Senser.o: .\Lib\Senser.c
+.\DebugRel\Senser.o: .\Lib\senser.h
+.\DebugRel\Senser.o: .\Lib\adc.h
+.\DebugRel\Senser.o: .\Lib\Common.h
+.\DebugRel\Senser.o: .\core\stm32f10x.h
+.\DebugRel\Senser.o: .\core\core_cm3.h
+.\DebugRel\Senser.o: H:\mpro\MCU\Keil_MDK\ARM\RV31\INC\stdint.h
+.\DebugRel\Senser.o: .\core\system_stm32f10x.h
+.\DebugRel\Senser.o: .\core\stm32f10x_conf.h
+.\DebugRel\Senser.o: .\core\system.h
+.\DebugRel\Senser.o: .\Lib\usart.h

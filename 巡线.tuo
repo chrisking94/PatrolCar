@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<TKStudioOptions Version="3.00" Author="YinHandong[Òüº®¶¬]">
+    <Projects OPTPES="96,96,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,96,96,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,96,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,">
+        <Project ProjectGUID="{628C0550-1544-47e3-8572-E3B4DC8FC944}" Name="Ñ²Ïß" ACTCFG="DebugRel">
+            <TARGOPT Name="DebugRel" OPTDF="0">
+                <OPTFFF VAL="&lt;.\lib\common.c&gt; {0,1,-1,-1,0,0,663,207,119,613}" />
+                <OPTFFF VAL="&lt;.\lib\ir1838.c&gt; {0,1,-1,-1,0,0,663,207,214,2932}" />
+                <OPTFFF VAL="&lt;.\lib\dma.c&gt; {0,1,-1,-1,0,0,663,207,65,234}" />
+                <OPTFFF VAL="&lt;.\main\main.c&gt; {0,1,-1,-1,0,0,663,207,30,735}" />
+                <OPTFFF VAL="&lt;.\lib\common.h&gt; {0,1,-1,-1,0,0,663,207,0,136}" />
+                <OPTFFF VAL="&lt;.\lib\senser.c&gt; {0,1,-1,-1,0,0,663,207,15,904}" />
+                <OPTFFF VAL="&lt;.\lib\usart.c&gt; {0,1,-1,-1,0,0,663,207,73,2076}" />
+                <OPTFFF VAL="&lt;.\lib\adc.c&gt; {0,1,-1,-1,0,0,663,207,59,104}" />
+                <OPTFFF VAL="&lt;.\lib\l298n.c&gt; {0,1,-1,-1,0,0,663,207,149,2978}" />
+                <OPTFFF VAL="&lt;.\lib\senser.h&gt; {0,1,-1,-1,0,0,663,207,0,214}" />
+                <OPTFFF VAL="&lt;.\lib\nvic.c&gt; {0,1,-1,-1,0,0,663,207,60,2602}" />
+                <OPTFFF VAL="&lt;.\lib\usart.h&gt; {0,1,-1,-1,0,0,663,207,6,201}" />
+                <OPTFFF VAL="&lt;.\lib\adc.h&gt; {2,3,-1,-1,0,0,663,207,0,52}" />
+                <OPTFFF VAL="&lt;.\lib\l298n.h&gt; {0,1,-1,-1,0,0,663,207,0,124}" />
+            </TARGOPT>
+        </Project>
+    </Projects>
+</TKStudioOptions>

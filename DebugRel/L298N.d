@@ -1,0 +1,10 @@
+.\DebugRel\L298N.o: .\Lib\L298N.c
+.\DebugRel\L298N.o: .\Lib\L298N.h
+.\DebugRel\L298N.o: .\Lib\Common.h
+.\DebugRel\L298N.o: .\core\stm32f10x.h
+.\DebugRel\L298N.o: .\core\core_cm3.h
+.\DebugRel\L298N.o: H:\mpro\MCU\Keil_MDK\ARM\RV31\INC\stdint.h
+.\DebugRel\L298N.o: .\core\system_stm32f10x.h
+.\DebugRel\L298N.o: .\core\stm32f10x_conf.h
+.\DebugRel\L298N.o: .\core\system.h
+.\DebugRel\L298N.o: .\Lib\usart.h
